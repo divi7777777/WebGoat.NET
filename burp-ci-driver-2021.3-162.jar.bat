@@ -1,1 +1,2 @@
+@echo off
 start java -jar WebGoat.NET/blob/master/burp-ci-driver-2021.3-162.jar http://localhost:8000 --api-key=cYeFbJHyHb7OVQVWEtEXcT2ekjf9hcjc --site-id=1 --min-severity=high --min-confidence=certain --report-file=scan-report.html --report-type=summary
