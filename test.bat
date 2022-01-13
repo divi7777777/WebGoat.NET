@@ -1,1 +1,1 @@
-java -jar https://github.com/divi7777777/WebGoat.NET/blob/master/burp-ci-driver-2021.3-162.jar https://your-enterprise-server:8080 --api-key=secret --site-id=7 --min-severity=high --min-confidence=certain --report-file=scan-report.html --report-type=summary
+java -jar https://portswigger.net/burp/releases/download?product=generic_ci_driver&version=2021.3&type=Jar https://your-enterprise-server:8080 --api-key=secret --site-id=7 --min-severity=high --min-confidence=certain --report-file=scan-report.html --report-type=summary
