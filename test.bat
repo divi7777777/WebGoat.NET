@@ -1,1 +1,1 @@
-java -jar https://portswigger.net/burp/releases/download?product=generic_ci_driver&version=2021.3&type=Jar https://your-enterprise-server:8080 --api-key=secret --site-id=7 --min-severity=high --min-confidence=certain --report-file=scan-report.html --report-type=summary
+java -jar https://portswigger.net/burp/releases/download?product=generic_ci_drive https://your-enterprise-server:8080 --api-key=secret --site-id=7 --min-severity=high --min-confidence=certain --report-file=scan-report.html --report-type=summary
