@@ -4,6 +4,6 @@
 **/app/
 
 # files
-Dockerfile*
+docker*
 **/*.md
 .gitignore
