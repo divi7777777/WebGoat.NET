@@ -31,11 +31,12 @@ steps:
     image: 'devops:$(Build.BuildId)'
     scanType: 'local'
     register: false
-    registry: false
     hideBase: false
     showNegligible: false
+    windowsScannerVersion: '4.2.0'
     scanner: 'registry.aquasec.com/scanner-cli:6.5'
     runOptions: '-e AQUA_TOKEN=d6f3aac7884e389f4ac60dac382b9487393452fa'
+    registry: 'demo4321'
     connection: 'aqua connection'
     customFlags: '--direct-cc'
 - task: Docker@2
