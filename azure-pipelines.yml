@@ -24,7 +24,7 @@ steps:
     Dockerfile: '**/docker'
 - task: Docker@2
   inputs:
-    containerRegistry: 'doc_Coon1'
+    containerRegistry: 'aqua login'
     command: 'login'
 - task: aquasecScanner@4
   inputs:
