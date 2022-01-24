@@ -29,7 +29,7 @@ steps:
 - task: aquasecScanner@4
   inputs:
     image: 'devops:$(Build.BuildId)'
-    scanType: 'hosted'
+    scanType: 'local'
     register: demo4321
     hideBase: false
     showNegligible: false
@@ -38,6 +38,7 @@ steps:
     registry: 'demo4321'
     connection: 'aqua connection'
     customFlags: '--direct-cc'
+- task: Docker@2
   inputs:
     containerRegistry: 'doc_Coon1'
     repository: 'devops'
