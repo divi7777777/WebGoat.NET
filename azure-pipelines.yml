@@ -31,6 +31,7 @@ steps:
     image: 'devops:(Build.BuildId)'
     scanType: 'hosted'
     scanner: 'registry.aquasec.com/scanner:6.5'
+    runOptions: 'docker run -d -e SCALOCK_LOG_LEVEL=DEBUG  registry.aquasec.com/scanner-cli:6.5 daemon --token 415b3452-6cfa-4c9c-9b74-4c6cfd769e54 --host https://2c8d1368c0.cloud.aquasec.com/'
     registry: 'demo4321'
     connection: 'aqua trivy conn'
 - task: Docker@2
