@@ -8,11 +8,7 @@ trigger:
 
 pool:
   name: Azure Pipelines
-
-variables:
-  solution: '**/*.sln'
-  buildPlatform: 'windows-latest'
-  buildConfiguration: 'Release'
+  vmImage: 'ubuntu-latest'
 
 steps:
 - task: NuGetToolInstaller@1
