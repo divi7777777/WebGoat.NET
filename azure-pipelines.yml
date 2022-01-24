@@ -34,7 +34,7 @@ steps:
 - task: aquasecScanner@4
   inputs:
     image: 'devops:$(Build.BuildId)'
-    scanType: 'local'
+    scanType: 'hosted'
     registry: 'demo4321'
     register: false
     hideBase: false
