@@ -26,6 +26,11 @@ steps:
   inputs:
     containerRegistry: 'aqua login'
     command: 'login'
+- task: Docker@2
+  inputs:
+    containerRegistry: 'doc_Coon1'
+    repository: 'devops'
+    command: 'push'
 - task: aquasecScanner@4
   inputs:
     image: 'devops:$(Build.BuildId)'
@@ -38,8 +43,3 @@ steps:
     runOptions: '-e AQUA_TOKEN=d6f3aac7884e389f4ac60dac382b9487393452fa'
     connection: 'aqua connection'
     customFlags: '--direct-cc'
-- task: Docker@2
-  inputs:
-    containerRegistry: 'doc_Coon1'
-    repository: 'devops'
-    command: 'push'
