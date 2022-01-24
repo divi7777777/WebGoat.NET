@@ -20,4 +20,14 @@ steps:
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
-
+- task: Docker@2
+  inputs:
+    containerRegistry: 'doc_Coon1'
+    repository: 'devops'
+    command: 'build'
+    Dockerfile: '**/Dockerfile'
+- task: Docker@2
+  inputs:
+    containerRegistry: 'doc_Coon1'
+    repository: 'devops'
+    command: 'push'
