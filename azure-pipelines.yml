@@ -28,6 +28,18 @@ steps:
     Dockerfile: '**/docker'
 - task: Docker@2
   inputs:
+    containerRegistry: 'aqua login'
+    command: 'login'
+- task: aquasecScanner@4
+  inputs:
+    image: 'devops:(Build.BuildId)'
+    scanType: 'hosted'
+    windowsScannerVersion: '4.2.0'
+    scanner: 'registry.aquasec.com/scanner:6.5'
+    registry: 'demo4321'
+    connection: 'aqua trivy conn'
+- task: Docker@2
+  inputs:
     containerRegistry: 'doc_Coon1'
     repository: 'devops'
     command: 'push'
