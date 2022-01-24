@@ -30,7 +30,7 @@ steps:
   inputs:
     image: 'devops:$(Build.BuildId)'
     scanType: 'local'
-    register: demo4321.azurecr.io
+    register: demo4321
     showNegligible: false
     scanner: 'registry.aquasec.com/scanner-cli:6.5'
     runOptions: '-e AQUA_TOKEN=d6f3aac7884e389f4ac60dac382b9487393452fa'
