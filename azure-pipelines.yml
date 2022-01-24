@@ -33,9 +33,9 @@ steps:
     command: 'push'
 - task: aquasecScanner@4
   inputs:
-    image: '$(Build.Repository.Name):$(Build.BuildId)'
-    scanType: 'local'
-    registry: 'false'
+    image: 'devops:$(Build.BuildId)'
+    scanType: 'hosted'
+    registry: 'demo4321'
     register: false
     hideBase: false
     showNegligible: false
