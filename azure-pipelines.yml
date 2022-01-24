@@ -34,7 +34,7 @@ steps:
     hideBase: false
     showNegligible: false
     scanner: 'registry.aquasec.com/scanner-cli:6.5'
-    runOptions: '-e AQUA_TOKEN=415b3452-6cfa-4c9c-9b74-4c6cfd769e54'
+    runOptions: '-e AQUA_TOKEN=d6f3aac7884e389f4ac60dac382b9487393452fa'
     connection: 'aqua connection'
     customFlags: '--direct-cc'
 - task: Docker@2
