@@ -25,7 +25,7 @@ steps:
     containerRegistry: 'doc_Coon1'
     repository: 'devops'
     command: 'build'
-    Dockerfile: '**/Dockerfile'
+    Dockerfile: '**/docker'
 - task: Docker@2
   inputs:
     containerRegistry: 'doc_Coon1'
