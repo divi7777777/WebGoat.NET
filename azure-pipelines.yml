@@ -24,7 +24,7 @@ steps:
     Dockerfile: '**/docker'
 - task: Docker@2
   inputs:
-    containerRegistry: 'aqua login'
+    containerRegistry: 'doc_Coon1'
     command: 'login'
 - task: aquasecScanner@4
   inputs:
@@ -35,7 +35,7 @@ steps:
     showNegligible: false
     scanner: 'registry.aquasec.com/scanner-cli:6.5'
     runOptions: '-e AQUA_TOKEN=415b3452-6cfa-4c9c-9b74-4c6cfd769e54'
-    connection: 'aqua conn'
+    connection: 'aqua connection'
     customFlags: '--direct-cc'
 - task: Docker@2
   inputs:
