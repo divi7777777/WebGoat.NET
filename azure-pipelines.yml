@@ -28,7 +28,7 @@ steps:
     command: 'login'
 - task: aquasecScanner@4
   inputs:
-    image: 'devops:(Build.BuildId)'
+    image: 'devops:$(Build.BuildId)'
     scanType: 'local'
     scanner: 'registry.aquasec.com/scanner:6.5'
     runOptions: '-e AQUA_TOKEN=415b3452-6cfa-4c9c-9b74-4c6cfd769e54'
