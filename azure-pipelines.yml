@@ -30,7 +30,6 @@ steps:
   inputs:
     image: 'devops:$(Build.BuildId)'
     scanType: 'local'
-    register: demo4321
     hideBase: false
     showNegligible: false
     scanner: 'registry.aquasec.com/scanner-cli:6.5'
