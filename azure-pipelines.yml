@@ -30,7 +30,6 @@ steps:
   inputs:
     image: 'devops:(Build.BuildId)'
     scanType: 'hosted'
-    windowsScannerVersion: '4.2.0'
     scanner: 'registry.aquasec.com/scanner:6.5'
     registry: 'demo4321'
     connection: 'aqua trivy conn'
