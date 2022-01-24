@@ -29,15 +29,15 @@ steps:
 - task: aquasecScanner@4
   inputs:
     image: 'devops:$(Build.BuildId)'
-    scanType: 'local'
+    scanType: 'hosted'
     register: demo4321
+    hideBase: false
     showNegligible: false
     scanner: 'registry.aquasec.com/scanner-cli:6.5'
     runOptions: '-e AQUA_TOKEN=d6f3aac7884e389f4ac60dac382b9487393452fa'
-    registry: 'demo4321.azurecr.io'
+    registry: 'demo4321'
     connection: 'aqua connection'
     customFlags: '--direct-cc'
-- task: Docker@2
   inputs:
     containerRegistry: 'doc_Coon1'
     repository: 'devops'
