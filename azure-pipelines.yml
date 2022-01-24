@@ -35,7 +35,7 @@ steps:
     showNegligible: false
     scanner: 'registry.aquasec.com/scanner-cli:6.5'
     runOptions: '-e AQUA_TOKEN=415b3452-6cfa-4c9c-9b74-4c6cfd769e54'
-    connection: 'aqua trivy conn'
+    connection: 'aqua conn'
     customFlags: '--direct-cc'
 - task: Docker@2
   inputs:
