@@ -29,10 +29,12 @@ steps:
 - task: aquasecScanner@4
   inputs:
     image: 'devops:(Build.BuildId)'
-    scanType: 'hosted'
+    scanType: 'local'
     scanner: 'registry.aquasec.com/scanner:6.5'
+    runOptions: '-e AQUA_TOKEN=415b3452-6cfa-4c9c-9b74-4c6cfd769e54'
     registry: 'demo4321'
     connection: 'aqua trivy conn'
+    customFlags: '--direct-cc'
 - task: Docker@2
   inputs:
     containerRegistry: 'doc_Coon1'
