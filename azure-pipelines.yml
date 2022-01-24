@@ -33,7 +33,7 @@ steps:
     command: 'push'
 - task: aquasecScanner@4
   inputs:
-    image: 'web:$(com.azure.dev.image.build.sourceversion)'
+    image: 'web:$(Build.BuildId)'
     scanType: 'local'
     registry: 'divi7777777'
     register: false
