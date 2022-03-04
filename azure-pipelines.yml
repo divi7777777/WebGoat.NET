@@ -1,7 +1,7 @@
 trigger:
 - master
 
-pool: 'default'
+pool: 'ubuntu-latest'
 
 variables:
   solution: '**/*.sln'
