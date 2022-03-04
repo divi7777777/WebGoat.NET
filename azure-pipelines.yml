@@ -1,7 +1,8 @@
 trigger:
 - master
 
-pool: 'ubuntu-latest'
+pool: 
+  vmImage: ubuntu-18.04
 
 variables:
   solution: '**/*.sln'
