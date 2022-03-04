@@ -15,7 +15,15 @@ steps:
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
-
+- task: SnykSecurityScan@1
+  inputs:
+    serviceConnectionEndpoint: 'snyk'
+    testType: 'app'
+    severityThreshold: 'critical'
+    monitorWhen: 'always'
+    failOnIssues: true
+    projectName: 'demo'
+    organization: 'divyam1188.cse18'
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
