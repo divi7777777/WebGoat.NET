@@ -19,10 +19,11 @@ steps:
   inputs:
     serviceConnectionEndpoint: 'snyk'
     testType: 'app'
+    targetFile: 'WebGoatCore.sln'
     severityThreshold: 'critical'
     monitorWhen: 'always'
     failOnIssues: true
-    additionalArguments: 'snyk test --file=WebGoatCore.sln'
+    #additionalArguments: 'snyk test --file=WebGoatCore.sln'
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
