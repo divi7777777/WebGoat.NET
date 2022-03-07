@@ -22,7 +22,7 @@ steps:
     severityThreshold: 'critical'
     monitorWhen: 'always'
     failOnIssues: true
-    additionalArguments: 'snyk test --file=WebGoatCore.sln'
+    additionalArguments: 'snyk test --file=WebGoatCore.sln --project-name=dot_net'
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
