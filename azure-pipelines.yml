@@ -22,8 +22,6 @@ steps:
     severityThreshold: 'critical'
     monitorWhen: 'always'
     failOnIssues: true
-    projectName: 'demo'
-    organization: 'divyam1188.cse18'
     additionalArguments: 'snyk test --file=.sln'
 - task: VSBuild@1
   inputs:
